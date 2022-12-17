@@ -3,7 +3,9 @@
   <main>
     <h1>Motarou's web site</h1>
   </main>
-  <footer></footer>
+  <footer>
+    © 2022 Motarou
+  </footer>
 </template>
 <script>
 
