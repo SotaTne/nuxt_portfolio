@@ -1,6 +1,5 @@
 <template>
-  <h1>hello world</h1>
-  <WorksContent />
+  <h1>helo</h1>
 </template>
 <script lang="ts"></script>
 <style lang="scss">

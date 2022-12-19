@@ -7,13 +7,44 @@
   "extends": [
     "plugin:vue/vue3-essential",
     "standard-with-typescript",
-    "prettier"
+    "prettier",
+    "@nuxtjs/eslint-config-typescript"
   ],
   "overrides": [
     {
-      "files": ["pages/*.vue", "error.vue", "layouts/*.vue", "component/*.vue"],
+      "files": [
+        "pages/*.vue",
+        "error.vue",
+        "layouts/*.vue",
+        "components/*.vue"
+      ],
       "rules": {
-        "vue/multi-word-component-names": "off"
+        "vue/multi-word-component-names": "off",
+        "vue/max-attributes-per-line": "off",
+        "vuejs-accessibility/alt-text": "error",
+        "vue/html-self-closing": [
+          "error",
+          {
+            "html": {
+              "void": "always"
+            }
+          }
+        ],
+        "prettier/prettier": [
+          "error",
+          {
+            "semi": false,
+            "singleQuote": true
+          }
+        ],
+        "vuejs-accessibility/aria-props": "error",
+        "vuejs-accessibility/aria-role": ["error", { "ignoreNonDOM": true }],
+        "vuejs-accessibility/aria-unsupported-elements": "error",
+        "vuejs-accessibility/form-control-has-label": "error",
+        "vuejs-accessibility/heading-has-content": "error",
+        "vuejs-accessibility/no-redundant-roles": "error",
+        "vuejs-accessibility/role-has-required-aria-props": "error",
+        "vuejs-accessibility/tabindex-no-positive": "error"
       }
     }
   ],

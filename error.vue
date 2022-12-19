@@ -7,9 +7,13 @@
     <nuxt-link to="/">Home page</nuxt-link>
   </div>
 </template>
-<script>
+<script lang="ts">
 export default {
   props: ['error'],
   layout: 'blog' // you can set a custom layout for the error page
 }
 </script>
+
+<style lang="scss">
+
+</style>

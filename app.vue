@@ -5,6 +5,5 @@
     </NuxtLayout>
   </div>
 </template>
-<script>
-
+<script lang="ts">
 </script>
