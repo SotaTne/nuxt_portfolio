@@ -17,7 +17,7 @@ export default defineNuxtConfig({
           name: 'viewport',
           content: 'width=device-width, initial-scale=1.0',
         },
-        { name: 'description', content: '' },
+        { name: 'description', content: 'この中に説明が入るよ' },
         //{ name: 'robots', content: 'noindex,follow' }, ホーム以外のページのseo対策があまりできていないときに使う
 
         //ogp
