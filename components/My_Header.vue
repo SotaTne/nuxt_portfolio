@@ -23,7 +23,6 @@
 
 </template>
 <script lang="ts">
-const a = "hello"
 
 </script>
 <style lang="scss">

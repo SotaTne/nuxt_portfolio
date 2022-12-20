@@ -1,8 +1,8 @@
 <template>
   <!--header-->
 
-  <Header />
 
+  <MyHeader />
 
 
   <slot />
