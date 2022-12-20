@@ -13,7 +13,7 @@
 <script>
 </script>
 <style lang="scss">
-nav {}
+
 </style>
 
 <script lang="ts"></script>
