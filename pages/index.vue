@@ -4,10 +4,8 @@
     <h1>hello</h1>
     <ChangeText />
   </main>
-  <Footer />
 </template>
-<script lang="ts">
-const use_list = ["hello", "good", "bit"]
+<script lang="ts" setup>
 </script>
 <style lang="scss">
 
