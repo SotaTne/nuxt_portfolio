@@ -1,24 +1,25 @@
 <template>
   <!--スパム対策-->
-  <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true"></form>
-  <!--ここからinput-->
-  <div class="send-box">
-    <div class="input-box">
-      <div class="email-box input-contents">
-        <label for="email">e-mail（必須）</label>
-        <input type="email" pattern=".+@globex\.com" size="30" required name="email">
+  <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+    <!--ここからinput-->
+    <div class="send-box">
+      <div class="input-box">
+        <div class="email-box input-contents">
+          <label for="email">e-mail（必須）</label>
+          <input type="email" pattern=".+@globex\.com" size="30" required name="email">
+        </div>
+        <div class="name-box input-contents">
+          <label for="name">name（必須）</label>
+          <input type="text" size="30" required name="name">
+        </div>
       </div>
-      <div class="name-box input-contents">
-        <label for="name">name（必須）</label>
-        <input type="text" size="30" required name="name">
+      <div class="message-box">
+        <p>message</p>
+        <textarea name="message" cols="30" rows="10" required></textarea>
       </div>
+      <button type="submit">送信</button>
     </div>
-    <div class="message-box">
-      <p>message</p>
-      <textarea name="message" cols="30" rows="10" required></textarea>
-    </div>
-    <button type="submit">送信</button>
-  </div>
+  </form>
 </template>
 <style lang="scss">
 .send-box {
