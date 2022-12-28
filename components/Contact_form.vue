@@ -6,11 +6,11 @@
       <div class="input-box">
         <div class="email-box input-contents">
           <label for="email">e-mail（必須）</label>
-          <input type="email" pattern=".+@globex\.com" size="30" required name="email">
+          <input type="email" size="30" autocomplete="email" name="email" required>
         </div>
         <div class="name-box input-contents">
           <label for="name">name（必須）</label>
-          <input type="text" size="30" required name="name">
+          <input type="text" size="30" name="name" autocomplete="name" required>
         </div>
       </div>
       <div class="message-box">
