@@ -11,3 +11,15 @@ a {
 .text-center {
   text-align: center;
 }
+
+html {
+  /*スクロールバー非表示（IE・Edge）*/
+  -ms-overflow-style: none;
+  /*スクロールバー非表示（Firefox）*/
+  scrollbar-width: none;
+
+  /*スクロールバー非表示（Chrome・Safari）*/
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

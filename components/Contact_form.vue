@@ -1,21 +1,49 @@
 <template>
-  <input type="text" class="input-a">
-  <input type="text">
-  <textarea name="" id="" cols="30" rows="10">
-
-  </textarea>
+  <!--スパム対策-->
+  <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true"></form>
+  <!--ここからinput-->
+  <div class="send-box">
+    <div class="input-box">
+      <div class="email-box input-contents">
+        <p>e-mail</p>
+        <input type="email" pattern=".+@globex\.com" size="30" required name="email">
+      </div>
+      <div class="name-box input-contents">
+        <p>name</p>
+        <input type="text" size="30" required name="name">
+      </div>
+    </div>
+    <div class="message-box">
+      <p>message</p>
+      <textarea name="message" id="" cols="30" rows="10"></textarea>
+    </div>
+    <button type="submit">送信</button>
+  </div>
 </template>
 <style lang="scss">
-input {
-  background-color: blue;
-}
+.send-box {
+  display: flex;
 
-.input-a {
-  background-color: green;
-}
+  .input-box {
+    display: flex;
+    flex-direction: column;
 
-textarea {
-  background-color: red;
+    input {
+      border: 1px solid #333
+    }
+  }
+
+  .message-box {
+    textarea {
+      border: 1px solid #333;
+      resize: none;
+      width: 300px;
+      height: 200px;
+    }
+
+  }
 }
 </style>
-<script lang="ts"></script>
+<script lang="ts" setup>
+
+</script>

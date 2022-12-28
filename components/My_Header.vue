@@ -7,11 +7,6 @@
       </NuxtLink>
       <ul>
         <li class="no-dots-li">
-          <NuxtLink to="/skills">
-            Skills
-          </NuxtLink>
-        </li>
-        <li class="no-dots-li">
           <NuxtLink to="/works">Works</NuxtLink>
         </li>
         <li class="no-dots-li">
@@ -22,13 +17,20 @@
   </header>
 
 </template>
-<script lang="ts">
+<script lang="ts" setup>
 
 </script>
 <style lang="scss">
 header {
+  //position: fixed;
+  //z-index: 10;
+  //top: 0;
+  //left: 0;
+  width: 100%;
+
   height: 60px;
-  background-color: orange;
+  //border: solid;
+  //background-color: rgba(rgb(108, 9, 9), 0.7);
   display: flex;
 
   .header-list {
@@ -59,4 +61,3 @@ header {
   }
 }
 </style>
-<script lang = "ts"></script>

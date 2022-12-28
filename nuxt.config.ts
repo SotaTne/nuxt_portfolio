@@ -17,7 +17,11 @@ export default defineNuxtConfig({
           name: 'viewport',
           content: 'width=device-width, initial-scale=1.0',
         },
-        { name: 'description', content: 'この中に説明が入るよ' },
+        {
+          name: 'description',
+          content:
+            '主にwebサイトやスマホアプリの作成などをしているフリーランスのエンジニアのwebサイトです。',
+        },
         //{ name: 'robots', content: 'noindex,follow' }, ホーム以外のページのseo対策があまりできていないときに使う
 
         //ogp
@@ -58,6 +62,7 @@ export default defineNuxtConfig({
     'mdi/css/materialdesignicons.min.css',
     /* add my scss*/ '@/assets/style/main.scss',
   ],
+
   build: {
     transpile: ['vuetify'],
   },

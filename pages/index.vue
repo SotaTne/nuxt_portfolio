@@ -1,13 +1,14 @@
 <template>
 
   <main>
-    <h1>Motarou's web site</h1>
+    <h1>hello</h1>
+    <ChangeText />
   </main>
-  <footer>
-    <Footer />
-  </footer>
+  <Footer />
 </template>
-<script lang="ts"></script>
+<script lang="ts">
+const use_list = ["hello", "good", "bit"]
+</script>
 <style lang="scss">
 
 </style>

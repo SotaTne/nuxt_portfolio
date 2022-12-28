@@ -16,7 +16,8 @@
         "pages/*.vue",
         "error.vue",
         "layouts/*.vue",
-        "components/*.vue"
+        "components/*.vue",
+        ".output/"
       ],
       "rules": {
         "vue/multi-word-component-names": "off",
