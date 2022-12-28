@@ -5,17 +5,17 @@
   <div class="send-box">
     <div class="input-box">
       <div class="email-box input-contents">
-        <p>e-mail</p>
+        <label for="email">e-mail（必須）</label>
         <input type="email" pattern=".+@globex\.com" size="30" required name="email">
       </div>
       <div class="name-box input-contents">
-        <p>name</p>
+        <label for="name">name（必須）</label>
         <input type="text" size="30" required name="name">
       </div>
     </div>
     <div class="message-box">
       <p>message</p>
-      <textarea name="message" id="" cols="30" rows="10"></textarea>
+      <textarea name="message" cols="30" rows="10" required></textarea>
     </div>
     <button type="submit">送信</button>
   </div>
