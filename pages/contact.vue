@@ -1,8 +1,11 @@
-<template>
-  <h1>contact</h1>
-  <ContactForm />
-</template>
 <script lang="ts"></script>
-<style lang="scss">
+<template>
+  <main>
+    <div class="contact-main">
+      <h1>contact</h1>
+      <ContactForm />
+    </div>
+  </main>
+</template>
 
-</style>
+<style lang="scss"></style>

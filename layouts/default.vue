@@ -1,22 +1,13 @@
+<script lang="ts" setup></script>
 <template>
   <!--header-->
 
-
-  <MyHeader />
-
+  <Header />
 
   <slot />
 
   <Footer />
   <!--footer-->
-
 </template>
-<script>
-</script>
-<style lang="scss">
-
-</style>
-
-<script lang="ts" setup>
-
-</script>
+<script></script>
+<style lang="scss"></style>

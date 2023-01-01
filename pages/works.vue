@@ -1,8 +1,10 @@
+<script lang="ts" setup></script>
 <template>
-  <h1>hello world</h1>
-  <WorksContent />
+  <main>
+    <div class="works-main">
+      <WorksContent />
+    </div>
+  </main>
 </template>
-<script lang="ts"></script>
-<style lang="scss">
 
-</style>
+<style lang="scss"></style>

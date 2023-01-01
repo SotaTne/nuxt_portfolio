@@ -5,54 +5,52 @@
     "node": true
   },
   "extends": [
+    "eslint:recommended",
     "plugin:vue/vue3-essential",
-    "standard-with-typescript",
-    "prettier",
-    "@nuxtjs/eslint-config-typescript"
+    "plugin:vue/vue3-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
   ],
-  "overrides": [
-    {
-      "files": [
-        "pages/*.vue",
-        "error.vue",
-        "layouts/*.vue",
-        "components/*.vue",
-        ".output/"
-      ],
-      "rules": {
-        "vue/multi-word-component-names": "off",
-        "vue/max-attributes-per-line": "off",
-        "vuejs-accessibility/alt-text": "error",
-        "vue/html-self-closing": [
-          "error",
-          {
-            "html": {
-              "void": "always"
-            }
-          }
-        ],
-        "prettier/prettier": [
-          "error",
-          {
-            "semi": false,
-            "singleQuote": true
-          }
-        ],
-        "vuejs-accessibility/aria-props": "error",
-        "vuejs-accessibility/aria-role": ["error", { "ignoreNonDOM": true }],
-        "vuejs-accessibility/aria-unsupported-elements": "error",
-        "vuejs-accessibility/form-control-has-label": "error",
-        "vuejs-accessibility/heading-has-content": "error",
-        "vuejs-accessibility/no-redundant-roles": "error",
-        "vuejs-accessibility/role-has-required-aria-props": "error",
-        "vuejs-accessibility/tabindex-no-positive": "error"
-      }
-    }
-  ],
+  "overrides": [],
+  "parser": "vue-eslint-parser",
   "parserOptions": {
+    "parser": "@typescript-eslint/parser",
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["vue"],
-  "rules": {}
+  "plugins": ["vue", "@typescript-eslint"],
+  "rules": {
+    "vue/multi-word-component-names": "off"
+  }
+  /*
+    
+    {
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-essential",
+    "plugin:vue/vue3-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "overrides": [],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["vue", "@typescript-eslint"],
+  "rules": {
+    "vue/multi-word-component-names": false, //ファイル名を好きなようにできる
+    "vue/html-self-closing": ["error", { "html": { "void": "always" } }]
+  }
+}
+
+    
+    */
 }
