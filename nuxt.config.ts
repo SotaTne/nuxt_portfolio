@@ -12,9 +12,13 @@ export default defineNuxtConfig({
       },
       link: [
         {
-          rel: 'icon',
+          rel: 'shortcut icon',
           type: 'image/x-icon',
-          href: '/favicon.icon',
+          href: '/favicon.ico',
+        },
+        {
+          rel: 'apple-touch-icon',
+          href: '/apple-touch-icon.png',
         },
       ],
       title: "Motarou's portfolio",
@@ -62,7 +66,7 @@ export default defineNuxtConfig({
         {
           hid: 'og:image',
           property: 'og:image',
-          content: '@/assets/img/my_logo.jpg',
+          content: '@/assets/img/my_logo.png',
         },
         { name: 'twitter:card', content: 'summary' }, // twitterの画像サイズ
       ],
