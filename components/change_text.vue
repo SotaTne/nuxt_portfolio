@@ -26,7 +26,7 @@
       if (out_put_list.value[i][1]) {
         setTimeout(() => {
           out_put_list.value[i][1] = !out_put_list.value[i][1]
-        }, 50)
+        }, 100)
 
         setTimeout(() => {
           out_put_list.value[next_index][1] = !out_put_list.value[next_index][1]
@@ -56,27 +56,45 @@
 </template>
 
 <style lang="scss">
-  $text_size: 40px;
-  $change_speed: 1.5s;
+  @import 'assets/style/_variables.scss';
 
   .change-text-area {
-    .text-area {
-      height: $text_size * 1.2;
+    //change_textで変更しない場所
+    //background-color: red;
+    $text_size: $text_size_;
+    @media (max-width: ($s_sp_max)) {
+      $text_size: 50px;
     }
+    height: $text_size * 1.5;
+    width: $text_size * 5;
 
+    @include sp {
+      max-width: 100%;
+    }
+    /*
+    @media (max-width: (370px)) {
+      height: 40px * 1.5 !important;
+      width: 50px * 5 !important;
+    }
+    */
     .change-text {
+      vertical-align: middle;
       font-size: $text_size;
+      /*
+      @media (max-width: (370px)) {
+        font-size: 50px;
+      }
+      */
       font-weight: bold;
     }
+  }
+  .v-enter-active,
+  .v-leave-active {
+    transition: opacity $change_speed ease;
+  }
 
-    .v-enter-active,
-    .v-leave-active {
-      transition: opacity $change_speed ease;
-    }
-
-    .v-enter-from,
-    .v-leave-to {
-      opacity: 0;
-    }
+  .v-enter-from,
+  .v-leave-to {
+    opacity: 0;
   }
 </style>

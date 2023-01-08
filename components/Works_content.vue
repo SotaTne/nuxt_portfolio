@@ -39,7 +39,7 @@
 <style lang="scss">
   .works-container {
     h2 {
-      margin: 50px;
+      //margin: 50px;
       text-align: center;
     }
 

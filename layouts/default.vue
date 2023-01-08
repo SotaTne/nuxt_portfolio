@@ -1,13 +1,23 @@
 <script lang="ts" setup></script>
 <template>
-  <!--header-->
+  <div class="container">
+    <!--header-->
 
-  <Header />
+    <Header />
 
-  <slot />
+    <slot />
 
-  <Footer />
-  <!--footer-->
+    <Footer />
+    <!--footer-->
+  </div>
 </template>
 <script></script>
-<style lang="scss"></style>
+<style lang="scss">
+  .container {
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+  }
+</style>

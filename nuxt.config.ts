@@ -52,26 +52,14 @@ export default defineNuxtConfig({
           content:
             '主にwebサイトやスマホアプリの作成などをしているフリーランスのエンジニアのwebサイトです。',
         },
-        { hid: 'og:image', property: 'og:image', content: '画像のURL' },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: '@/assets/img/my_logo.jpg',
+        },
         { name: 'twitter:card', content: 'summary' }, // twitterの画像サイズ
       ],
     },
   },
-  css: [
-    //'vuetify/lib/styles/main.sass',
-    //'mdi/css/materialdesignicons.min.css',
-    /* add my scss*/ '@/assets/style/main.scss',
-  ],
-  /*
-  build: {
-    transpile: ['vuetify'],
-  },
-  */
-  vite: {
-    /*
-    define: {
-      'process.env.DEBUG': false,
-    },
-    */
-  },
+  css: ['@/assets/style/style.scss'],
 })

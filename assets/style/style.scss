@@ -1,3 +1,21 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-size: 100%;
+  font-weight: 400;
+}
+
 a {
   color: black;
   font-size: 20px;
@@ -11,7 +29,6 @@ a {
 .text-center {
   text-align: center;
 }
-
 html {
   /*スクロールバー非表示（IE・Edge）*/
   -ms-overflow-style: none;
@@ -25,6 +42,18 @@ html {
 }
 
 main {
-  height: 90vh;
-  padding-top: 20px;
+  @include tab {
+    min-height: 550px !important;
+  }
+  @include sp {
+    min-height: 60vh !important;
+  }
+
+  min-height: 63vh !important;
+  margin: 20px;
+  //padding-top: $head_height;
+}
+
+.move_border {
+  //下の線を動かす
 }

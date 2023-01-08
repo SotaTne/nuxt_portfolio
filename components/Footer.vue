@@ -1,19 +1,28 @@
 <script lang="ts" setup></script>
 <template>
-  <div class="footer-container">
-    <footer>
+  <footer>
+    <div class="footer-container">
       <p class="text-center">© 2022 Motarou</p>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </template>
 
 <style lang="scss">
-  .footer-container {
-    p {
-      color: white;
+  @import 'assets/style/_variables.scss';
+  footer {
+    div {
+      @include tab {
+        padding-top: 6vh;
+      }
+
+      //background-color: red;
+      p {
+        vertical-align: middle;
+        line-height: 12vh;
+        color: black;
+      }
+      height: 12vh;
+      width: 100%;
     }
-    width: 150px;
-    height: 60px;
-    background-color: black;
   }
 </style>
