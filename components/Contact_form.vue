@@ -48,6 +48,7 @@
       <!--これがないとダメ-->
     </form>
   </div>
+  <!--
   <div class="contact-sns">
     <a href="https://github.com/motarou">
       <div class="github">
@@ -61,50 +62,62 @@
       </div>
     </a>
   </div>
+  -->
 </template>
 <style lang="scss">
   @import 'assets/style/_variables.scss';
   .contact-box {
     .send-info {
+      padding-top: 5vh;
+      padding-bottom: 10vh;
       display: flex;
       justify-content: space-evenly;
       .input-box {
-        //height: 50px;
-        //size: 50;
         display: flex;
         flex-direction: column;
-
-        label {
-          display: block;
-        }
+        justify-content: space-around;
         input {
           width: 300px;
+          padding: 10px 15px; /*ボックスを大きくする*/
+          font-size: 16px;
+          border-radius: 3px; /*ボックス角の丸み*/
+          border: 2px solid #ddd; /*枠線*/
+          box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+          outline: none;
           @include sp {
-            text-align: center;
-            width: 80vw;
+            width: 88vw;
           }
-          display: block;
-          border: 1px solid #333;
+          &:focus {
+            border: 2px solid #2ea1ff;
+          }
         }
       }
 
       .message-box {
-        label {
-          display: block;
-        }
         textarea {
           display: block;
-          border: 1px solid #333;
+          font-size: 16px;
+          border-radius: 3px; /*ボックス角の丸み*/
+          border: 2px solid #ddd; /*枠線*/
           resize: none;
+          padding: 10px 15px;
           width: 300px;
-          height: 200px;
+          height: 150px;
           @include sp {
             width: 80vw;
+          }
+          outline: none;
+          &:focus {
+            border: 2px solid #2ea1ff;
           }
         }
       }
       @include sp {
         flex-direction: column;
+      }
+      label {
+        display: block;
+        font-size: 16px;
       }
     }
 
@@ -116,13 +129,21 @@
 
     button {
       display: block;
+      margin: 0 auto;
       width: 10vw;
       height: 30px;
+      border-radius: 3px; /*ボックス角の丸み*/
+      border: 2px solid #ddd; /*枠線*/
+      font-size: 16px;
       @include sp {
         height: 30px;
         width: 80vw;
       }
+      &:hover {
+        background-color: rgb(195, 195, 195);
+      }
     }
+    /*
     .contact-sns {
       display: flex;
       .github {
@@ -136,5 +157,6 @@
         }
       }
     }
+    */
   }
 </style>

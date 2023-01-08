@@ -55,5 +55,24 @@ main {
 }
 
 .move_border {
-  //下の線を動かす
+  text-transform: none;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: #2e2eff;
+    transition: 0.2s width linear;
+  }
+
+  &:hover {
+    &:before {
+      left: 0;
+      width: 100%;
+    }
+  }
 }
