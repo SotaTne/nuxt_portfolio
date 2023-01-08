@@ -10,6 +10,13 @@ export default defineNuxtConfig({
         lang: 'ja',
         prefix: 'og: http://ogp.me/ns#',
       },
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/favicon.icon',
+        },
+      ],
       title: "Motarou's portfolio",
       meta: [
         { charset: 'utf-8' },
