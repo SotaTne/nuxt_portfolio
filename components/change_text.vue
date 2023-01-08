@@ -71,20 +71,9 @@
     @include sp {
       max-width: 100%;
     }
-    /*
-    @media (max-width: (370px)) {
-      height: 40px * 1.5 !important;
-      width: 50px * 5 !important;
-    }
-    */
     .change-text {
       vertical-align: middle;
       font-size: $text_size;
-      /*
-      @media (max-width: (370px)) {
-        font-size: 50px;
-      }
-      */
       font-weight: bold;
     }
   }

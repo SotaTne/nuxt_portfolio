@@ -2,7 +2,10 @@
 <template>
   <main>
     <div class="contact-main">
-      <h1>contact</h1>
+      <p>
+        私の、webポートフォリオはどうでしたか？ 質問や改善点、仕事の依頼、
+        挨拶やコメントだけでも気軽によろしくお願いします。
+      </p>
       <ContactForm />
     </div>
   </main>

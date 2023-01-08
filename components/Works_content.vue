@@ -18,6 +18,7 @@
           return element != null
         })
       "
+      class="no-works-text"
     >
       no works
     </h2>
@@ -38,8 +39,8 @@
 
 <style lang="scss">
   .works-container {
-    h2 {
-      //margin: 50px;
+    .no-works-text {
+      padding-top: 10vh;
       text-align: center;
     }
 

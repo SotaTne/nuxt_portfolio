@@ -64,6 +64,7 @@
         img {
           margin-left: 70px;
           height: 45px;
+          width: 45px;
           line-height: 12vh;
           border-radius: 50%;
           object-fit: cover;
@@ -86,7 +87,6 @@
           li {
             padding: 0 20px;
             line-height: 12vh;
-            //align-items: center;
           }
         }
       }
@@ -102,9 +102,6 @@
         }
         background-position: center;
         cursor: pointer;
-        &:hover {
-          //background-color: #ddd;
-        }
       }
       .open {
         background-image: url('@/assets/img/burger_menu.svg');

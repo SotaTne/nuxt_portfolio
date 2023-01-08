@@ -2,11 +2,15 @@
 <template>
   <main>
     <div class="index-main">
-      <img src="@/assets/img/my_logo.svg" alt="Motarou's Logo" />
+      <img
+        src="@/assets/img/my_logo.svg"
+        alt="Motarou's Logo"
+        width="400px"
+        height="287px"
+      />
       <div class="text_area">
         <div class="h-div">
           <ChangeText class="change_text" />
-          <img src="@/assets/img/my_logo.svg" alt="Motarou's Logo" />
         </div>
         <p>
           私は、主にwebアプリ・webサイト・スマホアプリなどを作成している、エンジニアです。
@@ -51,7 +55,7 @@
       .text_area {
         padding: 0 100px;
         a {
-          color: rgb(0, 183, 255);
+          color: #2e2eff;
         }
         p {
           padding-bottom: 30px;
@@ -74,21 +78,15 @@
             padding-bottom: 4vh;
           }
           display: flex;
-          img {
-            display: none;
-            max-width: $text_size_ * 1.5;
-            @include sp {
-              display: none; //inline-block;
-              vertical-align: middle;
-            }
-          }
         }
         display: flex;
         flex-direction: column;
       }
       img {
+        //heightはhtmlで指定
         display: flex;
-        max-width: 400px;
+        object-fit: cover;
+
         @include sp {
           display: none;
         }
