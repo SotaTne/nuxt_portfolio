@@ -14,11 +14,11 @@ export default defineNuxtConfig({
         {
           rel: 'shortcut icon',
           type: 'image/x-icon',
-          href: './assets/img/favicon.ico',
+          href: '/favicon.ico',
         },
         {
           rel: 'apple-touch-icon',
-          href: './assets/img/apple-touch-icon.png',
+          href: '/apple-touch-icon.png',
         },
       ],
       title: "Motarou's portfolio",
