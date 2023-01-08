@@ -3,17 +3,17 @@ $text_size_: 70px;
 
 $change_speed: 1.45s;
 
-$s_sp_max: 370x;
+$s_sp_max: 370px;
 $sp_max: 670px;
 $tab_max: 1000px;
-/*
+
 @mixin ssp {
   //一番小さいスマホ
   @media (max-width: ($s_sp_max)) {
     @content;
   }
 }
-*/
+
 @mixin sp {
   //スマホ
   @media (max-width: ($sp_max)) {
