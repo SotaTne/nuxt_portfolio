@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { ref } from 'vue'
-  const change_text_list = ['Motarou', 'Engineer'] //この中身を変える
+  const change_text_list = ['SotaTne', 'Engineer'] //この中身を変える
 
   const hide_speed = 1950 //ms
 
